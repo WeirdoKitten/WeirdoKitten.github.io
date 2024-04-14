@@ -1,144 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Satria Permata Sejati - Tugas Proyek</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Personal Portfolio Website - Satria Permata Sejati</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/808000fac2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-    <header>
-        <div class="main-container">
-            <div class="nav">
-                <div class="logo">
-                    <a href="/">SPS</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#Tentang Saya">Tentang Saya</a></li>
-                        <li><a href="#Kemampuan">Kemampuan</a></li>
-                        <li><a href="#MottoHidup">Motto Hidup</a></li>
-                        <li><a href="#LessonLearnt">Lesson Learnt</a></li>
-                        <li>
-                            <a href="https://github.com/WeirdoKitten" target="_blank">
-                                <button class="btn">Selengkapnya</button>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="burger">
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
-                </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Scraping</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Senang bertemu denganmu!!</p>
+                <h1>Saya <span>Satria</span><br> Permata Sejati</h1>
+                <p>Seorang mahasiswa teknik informatika yang mencoba <br>untuk menjadi lebih baik dari hari ke hari</p>
             </div>
         </div>
-        <section id="hero">
-            <div class = "hero-left">
-                <h3 class = "pre-title" id = "Tentang Saya">Perkenalkan Saya,</h3>
-                <h1 class = "hero-name"><span>Satria</span> Permata Sejati</h1>
-                <p>
-                    Saya adalah seorang mahasiswa IT biasa yang mencoba untuk menjadi lebih baik dari hari ke hari. Saya mempunyai keinginan yang kuat untuk menguasai banyak hal di bidang IT.
-                </p>
-            </div>
-            <div class = "hero-right">
-                <img src="./img/SATRIA.jpg" alt="Orang Lari">
-            </div>
-
-        </section>
-        
-    </header>
-    <section id ="Kemampuan">
-        <div class = "Kemampuan main-container">
-            <h3 class = "pre-title">Kemampuan</h3>
-            <h1 class="section-title Kemampuan-title">Berpengalaman Dalam</h1>
-            <div class = "grid-3">
-                <div class="Kemampuan">
-                    <div class="iconKemampuan">
-                        <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 18h-8v-1h8v1zm-2 1h-6v1h6v-1zm10-14v13h-4v6h-16v-6h-4v-13h4v-5h16v5h4zm-18 0h12v-3h-12v3zm12 10h-12v7h12v-7zm4-8h-20v9h2v-3h16v3h2v-9zm-1.5 1c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5z"/></svg>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/foto.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Tentang Saya</h1>
+                    <p>Saat ini, saya sedang menempuh pendidikan di Politeknik Negeri Bandung dengan program studi Teknik Informatika. Saya mempunyai keinginan yang kuat untuk menguasai banyak hal di bidang IT. Selain itu, saya selalu ingin berkontribusi dalam suatu projek karena dalam setiap projek, pasti ada sesuatu yang dapat dipelajari dan dijadikan pengalaman yang berharga.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('kemampuan')">Kemampuan</p>
+                        <p class="tab-links" onclick="opentab('pengalaman')">Pengalaman</p>
+                        <p class="tab-links" onclick="opentab('pendidikan')">Pendidikan</p>
                     </div>
-                    <h4>Microsoft Office</h4>
-                    <p>
-                        saya mempunyai banyak pengalaman dalam menggunakan office untuk menyelesaikan suatu proyek
-                    </p>
+                    <div class="tab-contents active-tab" id="kemampuan">
+                        <ul>
+                            <li><span>MS Office</span><br>mampu memanfaatkan aplikasi perkantoran dengan baik</li>
+                            <li><span>Web Development</span><br>mampu membuat web yang responsif</li>
+                            <li><span>App Development</span><br>mampu membuat aplikasi/game dengan menggunakan bahasa C,
+                                Java, atau Python</li>
+                            <li><span>Data Scraping</span><br>mampu mengolah data menggunakan python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="pengalaman">
+                        <ul>
+                            <li><span>Tic Tac Toe</span><br>pernah membuat game tic tac toe menggunakan bahasa C</li>
+                            <li><span>Money Tracking App</span><br>pernah membuat aplikasi untuk mengelola keuangan</li>
+                            <li><span>Portfolio Web</span><br>pernah membuat web portfolio (salah satunya web ini)</li>
+                            <li><span>Data Scraping</span><br>pernah mengelola data bank dan berita menggunakan excel dan python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="pendidikan">
+                        <ul>
+                            <li><span>2023 - Sekarang</span><br>Politeknik Negeri Bandung</li>
+                            <li><span>2019 - 2022</span><br>SMAN 1 Baleendah</li>
+                            <li><span>2017 - 2019</span><br>SMPN 2 Baleendah</li>
+                            <li><span>2012 - 2017</span><br>SDN Galih Pawarti</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="Kemampuan">
-                    <div class="iconKemampuan">
-                        <svg width="24" height="24" xmlns="https://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M10 16v2.5c0 2.483-2.017 4.5-4.5 4.5-2.484 0-4.5-2.017-4.5-4.5 0-2.484 2.016-4.5 4.5-4.5h2.5v-4h-2.5c-2.484 0-4.5-2.016-4.5-4.5 0-2.483 2.016-4.5 4.5-4.5 2.483 0 4.5 2.017 4.5 4.5v2.5h4v-2.5c0-2.483 2.017-4.5 4.5-4.5 2.484 0 4.5 2.017 4.5 4.5 0 2.484-2.016 4.5-4.5 4.5h-2.5v4h2.5c2.484 0 4.5 2.016 4.5 4.5 0 2.483-2.016 4.5-4.5 4.5-2.483 0-4.5-2.017-4.5-4.5v-2.5h-4zm-2 0h-2.5c-1.379 0-2.5 1.122-2.5 2.5s1.121 2.5 2.5 2.5 2.5-1.122 2.5-2.5v-2.5zm10.5 0h-2.5v2.5c0 1.378 1.121 2.5 2.5 2.5s2.5-1.122 2.5-2.5-1.121-2.5-2.5-2.5zm-4.5-6h-4v4.132h4v-4.132zm-6-2v-2.5c0-1.378-1.121-2.5-2.5-2.5s-2.5 1.122-2.5 2.5 1.121 2.5 2.5 2.5h2.5zm10.5 0c1.379 0 2.5-1.122 2.5-2.5s-1.121-2.5-2.5-2.5-2.5 1.122-2.5 2.5v2.5h2.5z"/></svg>                    </div>
-                    <h4>Bahasa C & Java</h4>
-                    <p>
-                        saya menggunakan bahasa c untuk membuat aplikasi TicTacToe
-                    </p>
+                <div class="about-col-3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Karya Saya</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/piton.jpg">
+                    <div class="layer">
+                        <h3>Money Tracking App</h3>
+                        <p>Aplikasi ini dibuat dengan bahasa Python dan juga dengan <i class="fa-solid fa-heart"></i> bersama teman-teman A3 untuk memenuhi tugas Proyek 1.</p>
+                        <a href="https://github.com/Proyek1-A3-Jaya/money-tracking-python"><i class="fa-solid fa-link"></i></a>
+                    </div>
                 </div>
-                <div class="Kemampuan">
-                    <div class="iconKemampuan">
-                        <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 1h-20v14h20v-14zm-2 12h-16v-10h16v10zm2 3h-20l-2 7h24l-2-7zm-12.228 6l.466-2h3.524l.466 2h-4.456z"/></svg>                    </div>
-                    <h4>Python</h4>
-                    <p>
-                        saya berpengalaman menggunakan python untuk scraping data
-                    </p>
+                <div class="work">
+                    <img src="img/tictactoe.jpg">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>Salah satu karya terbaik saya adalah tic tac toe. Permainan ini mempunyai banyak mode yang bisa kamu mainkan sendiri ataupun bersama teman.</p>
+                        <a href="https://github.com/WeirdoKitten/Tic-Tac-Toe---TreFantastici/tree/main/TicTacToe%20-%20TreFantastici%20(IMPROVED%20VERSION)"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/logohtml.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Ini adalah website pertama yang saya buat. Walaupun belum cukup bagus tetapi pelajaran dan pengalaman yang diambil sangatlah berharga.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id = "MottoHidup">
-        <div class = "MottoHidup main-container">
-            <h1 class = "section-title">Motto Hidup</h1>
-            <p>“Orang lain bisa, sama sama makan nasi! Anda pasti bisa mendapatkan hal serupa, jangan pernah menyerah dan cobalah terus.”</p>
-        </div>
-    </section>
-    <section id = "LessonLearnt">
-        <div class = "LessonLearnt main-container">
-            <h1 class = "section-title">Lesson Learnt</h1>
-            <p>Dalam praktikum kali ini, saya tidak mampu untuk menyelesaikannya sesuai dengan deadline. Namun, saya belajar banyak hal tentang bagaimana cara mengoperasikan Git dan Github. Selain itu, saya juga belajar cara membuat web statis menggunakan HTML & CSS yang nantinya dihubungkan dengan hosting GitHub</p>
-        </div>
-    </section>
-    <section >
-        <div class = "LessonLearnt main-container">
-            <h1 class = "section-title">Hobi</h1>
-            <p>Menonton Film</p>
-            <p>Mendengarkan Musik</p>
-            <p>Bermain Catur</p>
-            <p>Membaca Komik</p>
-            <p>Mengulik Program</p>
-        </div>
-    </section>
-    <section >
-        <div class = "LessonLearnt main-container">
-            <h1 class = "section-title">Harapan</h1>
-            <p>Saya harap, saya dapat terus berkembang dan bertahan sampai akhir perkuliahan ini.</p>
-        </div>
-    </section>
-    <section >
-        <div class = "LessonLearnt main-container">
-            <h1 class = "section-title">Lokasi Saya</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1534714507325!2d107.5711975736711!3d-6.872207393126511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sid!2sid!4v1709057303711!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-    </section>
-    <section>
-        <div class="LessonLearnt main-container">
-            <h1 class="section-title">Galeri</h1>
-            <div class="gallery-images">
-                <img src="./img/gambar1.jpg" alt="">
-                <img src="./img/gambar2.jpg" alt="">
-                <img src="./img/gambar3.jpg" alt="">
-                <img src="./img/gambar4.jpg" alt="">
-                <img src="./img/gambar5.jpg" alt="">
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Hubungi Saya</h1>
+                    <p><i class="fa-regular fa-envelope"></i>satria.permata.tif423@polban.ac.id</p>
+                    <p><i class="fa-brands fa-whatsapp"></i>081222964376</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/zealousroyale.zealousroyale.7/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/WeirdoKitten"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/weirdokitten/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Nama Kamu" required>
+                        <input type="email" name="Email" placeholder="Email Kamu" required>
+                        <textarea name="Message" rows="6" placeholder="Pesan/Saran Kamu"></textarea>
+                        <button type="submit" class="btn">Kirim</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="LessonLearnt main-container">
-            <h1 class="section-title">Video</h1>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sauzoenoYns?si=CXj-qwflw5atiA8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+        <div class="copyright">
+            <p>Copyright © Satria PS. Dibuat Dengan <i class="fa-solid fa-heart"></i> Di Depan Laptop</p>
         </div>
-    </section>
-    <footer>
-        <div class="main-container">
-            <p>Copyright 2024 Satria Permata Sejati</p>
-        </div>
-    </footer>
-    
+    </div>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
