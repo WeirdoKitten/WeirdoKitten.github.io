@@ -322,13 +322,16 @@ nav .fas{
     cursor: pointer;
 }
 
-
-
-
-#scraping a{
+#news-title{
     text-decoration: none;
     color: #009879;
     font-weight: 580;
+    transition: 0.5s;
+}
+
+#news-title:hover{
+    font-size: larger;
+    font-weight: 700;
 }
 
 #scraping p{
