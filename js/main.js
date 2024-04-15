@@ -20,3 +20,15 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-200px"
 }
+
+function runScraping() {
+    fetch('/scrape')
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            location.reload();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
