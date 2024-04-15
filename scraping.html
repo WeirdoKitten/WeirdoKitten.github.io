@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Website - Satria Permata Sejati</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/808000fac2.js" crossorigin="anonymous"></script>
+    <!-- Memanggil 2 packages secara online sebagai konfigurasi datatables -->
+    <link href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.3/r-3.0.1/datatables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.3/r-3.0.1/datatables.min.js"></script>
+    <!-- Memanggil package js/query.js yang ada pada satu folder untuk datatables -->
+    <script src="js/query.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#scraping">Scraping</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div id="scraping">
+        <div class="container">
+            <h1 class="sub-title">Scraping Data Berita</h1>
+            <p>Data berikut diambil dari <a href="https://www.republika.co.id/">republika.co.id</a></p>
+            <table id="data-scrap">
+                <thead>
+                    <tr>
+                        <td>No.</td>
+                        <td>Judul Berita</td>
+                        <td>Kategori</td>
+                        <td>Waktu Terbit</td>
+                        <td>Waktu Akses</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Satria PS. Dibuat Dengan <i class="fa-solid fa-heart"></i> Di Depan Laptop</p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

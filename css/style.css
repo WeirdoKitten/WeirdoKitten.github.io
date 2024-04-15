@@ -162,8 +162,9 @@ nav ul li a:hover::after{
 }
 
 
+
 #portfolio{
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .work-list{
@@ -232,6 +233,10 @@ nav ul li a:hover::after{
 }
 
 
+#contact{
+    padding: 80px 0;
+}
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -285,7 +290,7 @@ form input, form textarea{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #598d39;
+    border: thin solid #598d39;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -317,6 +322,81 @@ nav .fas{
     cursor: pointer;
 }
 
+
+
+
+#scraping a{
+    text-decoration: none;
+    color: #009879;
+    font-weight: 580;
+}
+
+#scraping p{
+    margin-top: 17px;
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+
+#data-scrap {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+
+#data-scrap a {
+    color: #fff ;
+    text-decoration: none ;
+}
+
+#data-scrap a:hover {
+    color: #009879 ;
+}
+
+#data-scrap thead th {
+    text-align: center !important;
+}
+
+#data-scrap thead tr {
+    text-align: center !important;
+    background-color: #009879;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-left:thin solid #fff ;
+    border-right:thin solid #fff ;
+}
+
+#data-scrap th,
+#data-scrap td {
+    padding: 12px 15px;
+}
+
+#data-scrap tbody tr {
+    border-bottom: thin solid #dddddd;
+    border-left:thin solid #fff ;
+    border-right:thin solid #fff ;
+}
+
+#data-scrap tbody tr:nth-of-type(even) {
+    background-color: #595959;
+}
+
+#data-scrap tbody tr:last-of-type {
+    border-bottom: 2px solid #fff;
+}
+
+#data-scrap tbody tr.active-row {
+    font-weight: bold;
+    color: #598d39;
+}
+
+table.dataTable thead td{
+    text-align: center !important;
+    font-size: 18px;
+}
 
 @media only screen and (max-width: 600px){
     #header{
